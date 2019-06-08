@@ -1,0 +1,593 @@
+doctype html
+html(lang="ru")
+    include includes/head.pug
+        title Start project
+    body
+        header.header#header
+            .container
+                .row.header__top.align-items-center.flex-wrap
+                    .col-6.col-lg-3.text-center.text-lg-left.mt-lg-0
+                        a.header__top_logo.d-lg-flex(href="#")
+                            img(src="img/logo.png", alt="logo")
+                            div.ml-2
+                                p.header__top_logo_name Техно<span>Континент</span> 
+                                p.header__top_logo_subtitle ТехноКонтинент-мы с тобой одной кровли!
+                        .col-12.text-center.d-lg-none.mobile__menu
+                            .nav-trigger#nav-trigger
+                                span.line
+                                span.line
+                                span.line
+                            nav(id="nav" class="out")
+                                ul.nav__list
+                                    li
+                                        a(href="#advs").nav-label Преимущества
+                                    li
+                                        a(href="#sales").nav-label Типы металлочерепицы
+                                    li
+                                        a(href="#type").nav-label Типы покрытия
+                                    li
+                                        a(href="#color").nav-label Популярные цвета
+                                    li
+                                        a(href="#gallery").nav-label Фотогалерея
+                                    li
+                                        a(href="#calculate-form").nav-label Калькулятор
+                                    li
+                                        a(href="#footer").nav-label Контакты
+                    .col-12.col-lg-3.text-center.text-lg-left.d-lg-flex.align-items-center.mt-5.mt-lg-0
+                        i(class="fas fa-map-marker-alt")
+                        div
+                            p.header__top_info <span>Адрес:</span> <br>
+                                | г. Барановичи ул.Брестская 86
+                    .col-12.col-lg-3.text-center.text-lg-left.d-lg-flex.align-items-center.mt-5.mt-lg-0
+                        i(class="fas fa-clock")
+                        div
+                            p.header__top_info <span>Пн-Пт:</span> с 9 00 до 18 00 <br>
+                                 <span>Сб-Вс:</span> с 9 00 до 14 00
+                                
+                    .col-12.col-lg-3.text-center.text-lg-left.d-lg-flex.align-items-center.mt-5.mt-lg-0
+                        i(class="fas fa-phone")
+                        div
+                            .header__top_info
+                                a.header__top_info_tel(href="tel:375336736999") +375 33 673-69-99
+                                .d-lg-flex
+                                    a.header__top_info_tel--min(href="tel:375296836999") +375 29 683-69-99
+                                    a.header__top_info_tel--min.ml-lg-5(href="tel:8(0163)410120") 8(0163) 41-01-20
+        section.menu#menu
+            .container
+                .row
+                    .col
+                        nav.menu__nav
+                            ul.menu__list.d-flex.justify-content-between
+                                li.menu__list_item
+                                    a.menu__list_item_link(href="#advs") Преимущества
+                                li.menu__list_item
+                                    a.menu__list_item_link(href="#sales") Типы металлочерепицы
+                                li.menu__list_item
+                                    a.menu__list_item_link(href="#type") Типы покрытия
+                                li.menu__list_item
+                                    a.menu__list_item_link(href="#color") Популярные цвета
+                                li.menu__list_item
+                                    a.menu__list_item_link(href="#gallery") Фотогалерея
+                                li.menu__list_item
+                                    a.menu__list_item_link(href="#calculate-form") Калькулятор
+                                li.menu__list_item
+                                    a.menu__list_item_link(href="#footer") Контакты
+        section.offer#offer.position-relative
+            .container 
+                .row.mt-5.align-items-center
+                    .col-12.col-lg-6.text-center.text-lg-left.offer__info
+                        h1.offer__title Большой выбор кровельных материалов
+                        p.offer__subtitle по низким ценам в Барановичах
+                        p.offer__price Металлочерепица по оптовым ценам <br> всего от 9.3 руб. за м2 с доставкой по Беларуси
+                    .col.offer__man
+                        img(src="img/header_manager.png", alt="man")
+                    .col-12.col-lg-4.text-center.text-lg-left.ml-auto
+                        form.offer__form(action="#")
+                            .row
+                                .col-12.text-center 
+                                    p.offer__form_title Получить точный и быстрый <br> расчет стоимости вашей кровли
+                                    p.offer__form_text Заполните форму и наш менеджер сделает для вас <br> точный и быстрый расчет 
+                                .col-12.text-center.text-lg-left
+                                    label.offer__form_label(for="square") Площадь кровли: 
+                                    input(type="text" name="square" id="square" placeholder="Например: 180 м кв")
+                                    label.offer__form_label.mt-3(for="square") Тип металлочерепицы: 
+                                    .select
+                                        select(name="select_type" id="select_type")
+                                            option(value="1" name="supermontarey") Супермонтеррей
+                                            option(value="2" name ="tramontana") Трамонтана
+                                            option(value="3" name="monterossa") Монтеросса
+                                    label.offer__form_label.mt-3(for="square") Тип покрытия: 
+                                    .select
+                                        select(name="select_class" id="select_class")
+                                            option(value="1" data-price="16,5") Премиум
+                                            option(value="2" data-price="12,74") Премьер
+                                            option(value="3" data-price="11,32") Стандарт-Эконом
+                                    .radio
+                                        p.radio__title <b> Считаем в комплекте с доборными элементами? </b>
+                                        div.d-flex.align-items-center
+                                            input(type="radio"  name="radio-type" id="radio-1") 
+                                            label.radio__label(for="radio-1") Да
+                                            input(type="radio"  name="radio-type" id="radio-2") 
+                                            label.radio__label(for="radio-2") Нет
+                                    label.offer__form_label.mt-3(for="phone") Ваш телефон: 
+                                    input(type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __")
+                                    button.btn(type="submit") Получить расчет
+                        .border-form
+        section.advs#advs
+            .container
+                .row.mt-5 
+                    h2.advs__title Наши преимущества
+                .row.mt-5
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.text-md-left.d-lg-flex.align-items-center.advs__item.animated.wow.bounceInLeft.delay-0.8s
+                        img(src="img/calculator.png")
+                        p.advs__text Бесплатный замер, расчет <br>  и  доставка  вашей крыши
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.text-md-left.d-lg-flex.align-items-center.advs__item.animated.wow.bounceInLeft.delay-0.8s
+                        img(src="img/pantone.png")
+                        p.advs__text Широкий ассортимент, возможность<br>  заказа редких позиций 
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.text-md-left.d-lg-flex.align-items-center.advs__item.animated.wow.bounceInRight.delay-0.8s
+                        img(src="img/support.png")
+                        p.advs__text Бесплатная консультация <br> и практические советы
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.text-md-left.d-lg-flex.align-items-center.advs__item.animated.wow.bounceInRight.delay-0.8s
+                        img(src="img/placeholder.png")
+                        p.advs__text Удобное расположение <br> в центре города
+
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.text-md-left.d-lg-flex.align-items-center.advs__item.animated.wow.bounceInLeft.delay-0.8s
+                        img(src="img/gift.png")
+                        p.advs__text При покупке комплекта <br> кровли приятный подарок
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.text-md-left.d-lg-flex.align-items-center.advs__item.animated.wow.bounceInLeft.delay-0.8s
+                        img(src="img/thumb-up.png")
+                        p.advs__text Высокое качество товара. <br> Работаем только с проверенными производителями
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.text-md-left.d-lg-flex.align-items-center.advs__item.animated.wow.bounceInRight.delay-0.8s
+                        img(src="img/security.png")
+                        p.advs__text Более 15 лет <br> на рынке
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.text-md-left.d-lg-flex.align-items-center.advs__item.animated.wow.bounceInRight.delay-0.8s
+                        img(src="img/calendar.png")
+                        p.advs__text Мы работаем без выходных
+        section.consultation#consultation.animated.wow.bounceInLeft.delay-1s
+            .container
+                .row.consultation__list.mt-5.align-items-center
+                    .col-lg-6.consultation__list_item.position-relative
+                        .square
+                            img(src="img/pp_man.png")
+                    .col-12.col-lg-6.text-lg-left.consultation__list_item.text-center
+                        form(action="#").consultation__form
+                            p.consultation__title Не знаете с чего начать?
+                            p.consultation__subtitle Оставьте заявку и наш менеджер проконсультирует вас.
+                            label.offer__form_label.mt-3(for="phone") Ваш телефон: 
+                            input(type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __")
+                            button.btn(type="submit") Заказать консультацию
+        section.sales#sales
+            .container
+                .row
+                    .col-12.text-lg-left
+                        h2 Тип металлочерепицы
+                .row.sales__list.mt-5
+                    .col-12.col-lg-4.text-center.text-lg-left
+                        .sales__list_item
+                            img.img-fluid(src="img/sale-product1.jpg")
+                            p.sales__list_item_title Супермонтеррей
+                            p.sales__list_item_text <span> Описание: </span> <br>
+                                | Классический S-образный профиль металлочерепицы, завоевавший популярность широкого круга потребителей. Умеренная высота ступеньки Монтеррей (21 мм) хорошо подчеркивает его фактуру. Выпускается в популярных полимерных покрытиях.
+                            p.sales__list_item_text <span> Характеристики: </span>
+                            ul
+                                li Ширина полная/полезная  1190/1100 мм
+                                li Высота ступени 21 мм
+                                li Длина ступеньки 350 мм
+                                li Максимальная длина 6 м   
+                            p.sales__list_item_text.sales__list_item_price <span> Цена: </span> <br>
+                                | от  <span class="price">9,30</span>byn за кв.м.
+                            button.btn.btn-primary(data-toggle="modal" data-target="#exampleModal1") Заказать
+                    .col-12.col-lg-4.text-center.text-lg-left
+                        .sales__list_item
+                            img.img-fluid(src="img/sale-product2.jpg")
+                            p.sales__list_item_title Трамонтана
+                            p.sales__list_item_text <span> Описание: </span> <br>
+                                | Усиленная геометрия профиля металлочерепицы Трамонтана делает ее устойчивой к порывистым ветровым нагрузкам. Это свойство позволяет металлочерепице Трамонтана быть наилучшим решением для частного строительства в любых географических широтах.
+                            p.sales__list_item_text <span> Характеристики: </span>
+                            ul
+                                li Ширина полная/полезная 1195/1150 мм
+                                li Высота ступени 25/30/35 мм
+                                li Длина ступеньки 350/400 мм
+                                li Максимальная длина 6 м  
+                            p.sales__list_item_text.sales__list_item_price <span> Цена: </span> <br>
+                                | от  <span class="price">13,81</span>byn за кв.м.
+                            button.btn.btn-primary(data-toggle="modal" data-target="#exampleModal2") Заказать
+                    .col-12.col-lg-4.text-center.text-lg-left
+                        .sales__list_item
+                            img.img-fluid(src="img/sale-product3.jpg")
+                            p.sales__list_item_title.m-auto Монтеросса
+                            p.sales__list_item_text.lh <span> Описание: </span> <br>
+                                | Благодаря технологии 3D реза горизонтальные стыки листов металлочерепицы Монтерроса практически незаметны. Герметичность вертикального нахлеста гарантирует двойная капиллярная канавка. Продуманная геометрия продольного нахлеста позволяет оптимально использовать материал без лишнего металла в замке, что приводит к экономии финансов.
+                            p.sales__list_item_text <span> Характеристики: </span>
+                            ul
+                                li Ширина полная/полезная  1190/1100 мм
+                                li Высота ступени 21 мм
+                                li Длина ступеньки 350 мм
+                                li Максимальная длина 6 м   
+                            p.sales__list_item_text.sales__list_item_price <span> Цена: </span> <br>
+                                | от  <span class="price">14,42</span>byn за кв.м.
+                            button.btn.btn-primary(data-toggle="modal" data-target="#exampleModal3") Заказать
+        section.type#type
+            .container
+                .row
+                    .col-12.text-left
+                        h2.type__title Тип покрытия
+                        p.type__subtitle Есть 3 типа покрытия, которые отличаются друг от друга:
+                .row.mt-5
+                    .col-12.text-left.col-lg-4.mt-3
+                        .type__item.premium
+                            p.type__item_warranty.text-right Гарантия до 40 лет 
+                            .d-lg-flex.justify-content-between.align-items-center
+                                p.type__item_title Премиум
+                                p.type__item_price Цена от <span> 16,15 byn </span>
+                            p.type__item_text В перечень данной линейки покрытий входят материалы наивысшего качества с наилучшими показателями.
+                            p.type__item_line <span>Доступные покрытия в линейке:</span>
+                                | VikingMPE, PURMAN, GraniteCLOUDY, AGNETA, Colorcoat Prisma.
+                            p.type__item_height Толщина стали 0,5 мм
+                    .col-12.text-left.col-lg-4.mt-3
+                        .type__item.premier
+                            p.type__item_warranty.text-right Гарантия до 30 лет 
+                            .d-lg-flex.justify-content-between.align-items-center
+                                p.type__item_title Премьер
+                                p.type__item_price Цена от <span> 12,74 byn </span>
+                            p.type__item_text В перечень данной линейки входят материалы достойного качества, которые хорошо себя зарекомендовали на рынке и отлично подойдут в качестве материалов для кровли.
+                            p.type__item_line <span>Доступные покрытия в линейке:</span>
+                                | NormanMP, PURETAN
+                            p.type__item_height Толщина стали 0,5 мм
+                    .col-12.text-left.col-lg-4.mt-3
+                        .type__item.standart
+                            p.type__item_warranty.text-right Гарантия до 10 лет 
+                            .d-lg-flex.justify-content-between.align-items-center
+                                p.type__item_title Эконом-Стандарт
+                                p.type__item_price Цена от <span> 9,30 byn </span>
+                            p.type__item_text В перечень данной линейки покрытий входят самые бюджетные материалы.
+                            p.type__item_line <span>Доступные покрытия в линейке:</span>
+                                | VikingMP, Полиэстер 
+                            p.type__item_height Толщина стали 0,4мм и 0,45 мм
+        section.color#color
+            .container
+                .row
+                    .col-12.text-left
+                        h2.color__title Популярные цвета металлочерепицы
+                .row.responsive.mt-3
+                    .col-12.col-lg-2.text-center.color__item
+                        img.img-fluid(src="img/slide/slide-1.jpg")
+                        span 7024
+                    .col-12.col-lg-2.text-center.color__item
+                        img.img-fluid(src="img/slide/slide-2.jpg")
+                        span 5005
+                    .col-12.col-lg-2.text-center.color__item
+                        img.img-fluid(src="img/slide/slide-3.jpg")
+                        span 3005
+                    .col-12.col-lg-2.text-center.color__item
+                        img.img-fluid(src="img/slide/slide-4.jpg")
+                        span 6005
+                    .col-12.col-lg-2.text-center.color__item
+                        img.img-fluid(src="img/slide/slide-5.jpg")
+                        span 8017
+                    .col-12.col-lg-2.text-center.color__item
+                        img.img-fluid(src="img/slide/slide-6.jpg")
+                        span 9005
+                    .col-12.col-lg-2.text-center.color__item
+                        img.img-fluid(src="img/slide/slide-1.jpg")
+                        span 7024
+                    .col-12.col-lg-2.text-center.color__item
+                        img.img-fluid(src="img/slide/slide-2.jpg")
+                        span 5005
+                    .col-12.col-lg-2.text-center.color__item
+                        img.img-fluid(src="img/slide/slide-3.jpg")
+                        span 3005
+                    .col-12.col-lg-2.text-center.color__item
+                        img.img-fluid(src="img/slide/slide-4.jpg")
+                        span 6005
+                    .col-12.col-lg-2.text-center.color__item
+                        img.img-fluid(src="img/slide/slide-5.jpg")
+                        span 8017
+                    .col-12.col-lg-2.text-center.color__item
+                        img.img-fluid(src="img/slide/slide-6.jpg")
+                        span 9005
+        section.consultation.payment#consultation.animated.wow.bounceInLeft.delay-0.8s
+            .container
+                .row.consultation__list.mt-5.align-items-center
+                    .col-lg-6.consultation__list_item.position-relative
+                        .square
+                            img.img-fluid(src="img/pp_man2.png")
+                    .col-12.col-lg-6.text-lg-left.consultation__list_item.text-center
+                        form(action="#").consultation__form
+                            p.consultation__title Получите бесплатный расчет <br> сметы за 24 часа
+                            p.consultation__subtitle Оставьте заявку и наш менеджер рассчитает смету в течении <br> 24 часов для Вас.
+                            label.offer__form_label.mt-3(for="phone") Ваш телефон: 
+                            input(type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __")
+                            button.btn(type="submit") Заказать консультацию
+        section.gallery#gallery
+            .container 
+                .row
+                    .col-12.text-left
+                        h2.gallery__title Фотогалерея
+                .row.mt-5.d-none.d-lg-flex.d-md-flex
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery_link" href="img/gallery/big/1.jpg")
+                            div.photobox.photobox_type5
+                                div.photobox__previewbox
+                                    img.img-fluid.photobox__preview(src="img/gallery/1.jpg")
+                                    span.photobox__label: i.fas.fa-plus
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery_link" href="img/gallery/big/2.jpg")
+                            div.photobox.photobox_type5
+                                div.photobox__previewbox                               
+                                    img.img-fluid.photobox__preview(src="img/gallery/2.jpg")
+                                    span.photobox__label: i.fas.fa-plus
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery_link" href="img/gallery/big/3.jpg")
+                            div.photobox.photobox_type5
+                                div.photobox__previewbox                               
+                                    img.img-fluid.photobox__preview(src="img/gallery/3.jpg")
+                                    span.photobox__label: i.fas.fa-plus
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery_link" href="img/gallery/big/4.jpg")
+                            div.photobox.photobox_type5
+                                div.photobox__previewbox                               
+                                    img.img-fluid.photobox__preview(src="img/gallery/4.jpg")
+                                    span.photobox__label: i.fas.fa-plus
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery_link" href="img/gallery/big/5.jpg")
+                            div.photobox.photobox_type5
+                                div.photobox__previewbox                               
+                                    img.img-fluid.photobox__preview(src="img/gallery/5.jpg")
+                                    span.photobox__label: i.fas.fa-plus
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery_link" href="img/gallery/big/6.jpg")
+                            div.photobox.photobox_type5
+                                div.photobox__previewbox                               
+                                    img.img-fluid.photobox__preview(src="img/gallery/6.jpg")
+                                    span.photobox__label: i.fas.fa-plus
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery_link" href="img/gallery/big/7.jpg")
+                            div.photobox.photobox_type5
+                                div.photobox__previewbox                               
+                                    img.img-fluid.photobox__preview(src="img/gallery/7.jpg")
+                                    span.photobox__label: i.fas.fa-plus
+                    .col-12.col-lg-3.col-md-4.text-center.text-lg-left.mt-3
+                        a(data-fancybox="gallery_link" href="img/gallery/big/8.jpg")
+                            div.photobox.photobox_type5
+                                div.photobox__previewbox                               
+                                    img.img-fluid.photobox__preview(src="img/gallery/8.jpg")
+                                    span.photobox__label: i.fas.fa-plus
+                .row.gallery-mobile.d-block.d-md-none.d-lg-none.mt-5
+                    .col-12.m-auto
+                        img.img-fluid.m-auto(src="img/gallery/1.jpg")
+                    .col-12.m-auto
+                        img.img-fluid.m-auto(src="img/gallery/2.jpg")
+                    .col-12.m-auto
+                        img.img-fluid.m-auto(src="img/gallery/3.jpg")
+                    .col-12.m-auto
+                        img.img-fluid.m-auto(src="img/gallery/4.jpg")
+                    .col-12.m-auto
+                        img.img-fluid.m-auto(src="img/gallery/5.jpg")
+                    .col-12.m-auto
+                        img.img-fluid.m-auto(src="img/gallery/6.jpg")
+                    .col-12.m-auto
+                        img.img-fluid.m-auto(src="img/gallery/7.jpg")
+                    .col-12.m-auto
+                        img.img-fluid.m-auto(src="img/gallery/8.jpg")
+        section.discount#discount
+            .container
+                .row.mt-5
+                    .col-lg-6.d-none.d-lg-block
+                        img(src="img/sales-man.png").ml-lg-5
+                    .col-12.col-lg-6.text-lg-left.text-center
+                        p.discount__title Скидка до <span>18<span>%</span></span> <br> на доборные элементы
+                        p.discount__text ЗАКАЗЫВАЯ МЕТАЛЛОЧЕРЕПИЦУ У НАС, ВЫ ПОЛУЧАЕТЕ СКИДКУ ДО 18% НА ВСЕ КОМПЛЕКТУЮЩИЕ <span>ДОБОРНЫЕ ЭЛЕМЕНТЫ</span>
+                        span.discount_fix Оставить заявку
+                        form.d-lg-flex.align-items-start.justify-content-between(action="#")
+                            div
+                                label.offer__form_label(for="phone") Ваш телефон: 
+                                input(type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __")
+                            button.btn(type="submit") Заказать консультацию
+                        p.discount__callback ИЛИ ПОЗВОНИТЕ НАМ: <span> +375 33 673-69-99 </span>
+        section.installment#installment
+            .container
+                .row.mt-5
+                    .col-12.col-lg-6.text-center
+                        .installment__cart.ml-auto
+                            img.img-fluid(src="img/magnit-cart.png")
+                    .col-12.col-lg-6.text-lg-left.text-center
+                        p.installment__title РАССРОЧКА 0% ДО 36 МЕСЯЦЕВ,
+                        p.installment__subtitle БЕЗ ПЕРВОНАЧАЛЬНОГО ВЗНОСА 
+                        p.installment__text КАРТА РАССРОЧКИ МАГНИТ
+                .row.calculate#calculate-form
+                    .col-12.text-center.text-lg-left.ml-auto.calculate__item
+                        form.offer__form.calc__form
+                            .row.align-items-center
+                                .col-12.text-left 
+                                    h2 Получить точный и быстрый <br> расчет стоимости вашей кровли
+                                    p.offer__form_text Заполните форму и наш менеджер сделает для вас точный и быстрый расчет 
+                                .col-12.col-lg-3.text-center.text-lg-left.mt-lg-4
+                                    label.offer__form_label(for="square") Площадь кровли м2: 
+                                    input(class="calc__square" type="text" name="square" id="square" placeholder="Например: 180")
+                                .col-12.col-lg-3.text-center.text-lg-left
+                                    label.offer__form_label.mt-3(for="square") Тип металлочерепицы: 
+                                    .select
+                                        select(name="select_type" id="select_type")
+                                            option.option_type.supType( data-premium="16.5" data-premier="12.74" data-standart="11.32") Супермонтеррей
+                                            option.option_type.tramType( data-premium="17.30" data-premier="13.81" ) Трамонтана
+                                            option.option_type.monType( data-premium="17.85" data-premier="14.42" ) Монтеросса
+                                .col-12.col-lg-3.text-center.text-lg-left
+                                    label.offer__form_label.mt-3(for="square") Тип покрытия: 
+                                    .select
+                                        select(name="select_class" id="select_class")
+                                            option.option_class.premiumSelect( data-price="16.5") Премиум
+                                            option.option_class.premierSelect( data-price="12,74") Премьер
+                                            option.option_class.standartSelect( data-price="11.32") Стандарт-Эконом
+                                .col-12.col-lg-3.text-center.text-lg-left
+                                    .radio
+                                        p.radio__title <b> Считаем в комплекте с доборными элементами? </b>
+                                        div.d-flex.align-items-center.justify-content-center.justify-content-lg-start
+                                            input(type="radio"  name="radio-type" id="radio-1") 
+                                            label.radio__label(for="radio-1") Да
+
+                                            input(type="radio"  name="radio-type" id="radio-2") 
+                                            label.radio__label(for="radio-2") Нет
+                                .col-12.col-lg-3.text-center.text-lg-left.mt-4
+                                    label.offer__form_label.mt-3(for="name") Ваш имя: 
+                                    input(type="text" name="name" id="name" placeholder="Иван")
+                                .col-12.col-lg-3.text-center.text-lg-left.mt-4
+                                    label.offer__form_label.mt-3(for="phone") Ваш телефон: 
+                                    input(type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __")
+                                .col-12.col-lg-3.text-center.text-lg-left.mt-4
+                                    label.offer__form_label.mt-3(for="email") Ваш E-mail: 
+                                    input(type="email" name="email" id="email" placeholder="Mail@mail.ru")
+                            .row.mt-5
+                                .col-12.text-center.text-lg-left.d-lg-flex.align-items-center.justify-content-between
+                                    p.calculate__title Стоимость вашей кровлии:
+                                        span.calculate__price.calc__display 
+                                    button.btn.btn-primary(data-toggle="modal" data-target="#thanksModal") Получить расчет
+        footer.footer#footer 
+            .container-fluid
+                .row.footer__contacts.align-items-end
+                    .col-12.col-lg-4.text-center.text-lg-left
+                        .contacts
+                            p.footer__contacts_title Контакты
+                            p.footer__contacts_address <span> Адрес: </span> <br>
+                                | г.Барановичи, ул. Брестская д.86
+                            p.footer__contacts_address <span> Время работы: </span> <br>
+                                | Пн-Пт: с 9:00 до 18:00 <br>
+                                | Сб-Вс: с 9:00 до 14:00 <br>
+                            p.footer__contacts_address <span> Телефоны: </span> <br>
+                                | +375 33 673-6-999 <br>
+                                | +375 29 683-69-99 <br>
+                                | 8(0163)41-01-20 <br>
+                            ul.d-flex.mt-4.justify-content-center.justify-content-lg-start
+                                li
+                                    a.vk(href="#") 
+                                li
+                                    a.fb(href="#")
+                                li
+                                    a.inst(href="#")
+                            p.politics Не является публичной офертой
+                    .col-12.col-lg-8.footer__map.d-lg-block.d-none.position-relative
+                        iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd432400b6d89adffcd3b451cdd21a775e804ad8228066d532ea5565a7fd7f4e&amp;source=constructor" width="100%" height="720" frameborder="0")
+                        img(src="img/place.png")
+                    .col-12.col-lg-8.footer__map.d-lg-none.d-block.container-fluid
+                        iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Aff94eda03eb7cc7ffea147719b5bf4489cca61343d67042eb6a363d5ca12227d&amp;source=constructor" width="100%" height="302" frameborder="0")
+        
+        div(class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+            div(class="modal-dialog" role="document")
+                div(class="modal-content")
+                    div(class="modal-header")
+                        p.offer__form_title Заказать <br> супермонтеррей
+                        p.offer__form_text Заполните форму и наш менеджер свяжется с вами <br> в ближайшее врямя
+                        button(type="button" class="popup-close close" data-dismiss="modal" aria-label="Close"): i.fas.fa-times
+                        span(aria-hidden="true") 
+                            | &times;
+                    div(class="modal-body")
+                        form.offer__form(action="#")
+                                    label.offer__form_label.mt-3(for="name") Ваш имя: 
+                                    input(type="text" name="name" id="name" placeholder="Иван")
+                                    label.offer__form_label.mt-3(for="phone") Ваш телефон: 
+                                    input(type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __")
+                                    button.btn(type="submit") Получить расчет
+                    .border-form
+        div(class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+            div(class="modal-dialog" role="document")
+                div(class="modal-content")
+                    div(class="modal-header")
+                        p.offer__form_title ТРАМОНТАНА
+                        p.offer__form_text Заполните форму и наш менеджер свяжется с вами <br> в ближайшее врямя
+                        button(type="button" class="popup-close close" data-dismiss="modal" aria-label="Close"): i.fas.fa-times
+                        span(aria-hidden="true") 
+                            | &times;
+                    div(class="modal-body")
+                        form.offer__form(action="#")
+                                    label.offer__form_label.mt-3(for="name") Ваш имя: 
+                                    input(type="text" name="name" id="name" placeholder="Иван")
+                                    label.offer__form_label.mt-3(for="phone") Ваш телефон: 
+                                    input(type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __")
+                                    button.btn(type="submit") Получить расчет
+                    .border-form
+        div(class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+            div(class="modal-dialog" role="document")
+                div(class="modal-content")
+                    div(class="modal-header")
+                        p.offer__form_title МОНТЕРОССА
+                        p.offer__form_text Заполните форму и наш менеджер свяжется с вами <br> в ближайшее врямя
+                        button(type="button" class="popup-close close" data-dismiss="modal" aria-label="Close"): i.fas.fa-times
+                        span(aria-hidden="true") 
+                            | &times;
+                    div(class="modal-body")
+                        form.offer__form(action="#")
+                                    label.offer__form_label.mt-3(for="name") Ваш имя: 
+                                    input(type="text" name="name" id="name" placeholder="Иван")
+                                    label.offer__form_label.mt-3(for="phone") Ваш телефон: 
+                                    input(type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __")
+                                    button.btn(type="submit") Получить расчет
+                    .border-form
+        div(class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+            div(class="modal-dialog" role="document")
+                div(class="modal-content")
+                    div(class="modal-header")
+                        p.offer__form_title расчет вашей кровли <br> отправлен на почту 
+                        p.offer__form_text Наш менеджер свяжется с вами <br> в ближайшее врямя для уточнения деталей.
+                        button(type="button" class="popup-close close" data-dismiss="modal" aria-label="Close"): i.fas.fa-times
+                        span(aria-hidden="true") 
+                            | &times;
+                    .border-form
+        
+                   
+                            
+
+                        
+
+        
+
+
+
+                            
+
+
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        include includes/scripts.pug
+                            
+
+                                            
+                                            
+   
+                                    
+                                                
+
+
+
+
+
+
+        
+
+            
+
+
+        
+    
+
+
+
+
+
+            

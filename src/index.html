@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/animate.css">
+    <link rel="stylesheet" href="assets/slick/slick.css">
+    <link rel="stylesheet" href="assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Start project</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="row header__top align-items-center flex-wrap">
+          <div class="col-6 col-lg-3 text-center text-lg-left mt-lg-0"><a class="header__top_logo d-lg-flex" href="#"><img src="img/logo.png" alt="logo">
+              <div class="ml-2">
+                <p class="header__top_logo_name">Техно<span>Континент</span> </p>
+                <p class="header__top_logo_subtitle">ТехноКонтинент-мы с тобой одной кровли!</p>
+              </div></a>
+            <div class="col-12 text-center d-lg-none mobile__menu">
+              <div class="nav-trigger" id="nav-trigger"><span class="line"></span><span class="line"></span><span class="line"></span></div>
+              <nav class="out" id="nav">
+                <ul class="nav__list">
+                  <li><a class="nav-label" href="#advs">Преимущества</a></li>
+                  <li><a class="nav-label" href="#sales">Типы металлочерепицы</a></li>
+                  <li><a class="nav-label" href="#type">Типы покрытия</a></li>
+                  <li><a class="nav-label" href="#color">Популярные цвета</a></li>
+                  <li><a class="nav-label" href="#gallery">Фотогалерея</a></li>
+                  <li><a class="nav-label" href="#calculate-form">Калькулятор</a></li>
+                  <li><a class="nav-label" href="#footer">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 text-center text-lg-left d-lg-flex align-items-center mt-5 mt-lg-0"><i class="fas fa-map-marker-alt"></i>
+            <div>
+              <p class="header__top_info">
+                <span>Адрес:</span> <br>г. Барановичи ул.Брестская 86</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 text-center text-lg-left d-lg-flex align-items-center mt-5 mt-lg-0"><i class="fas fa-clock"></i>
+            <div>
+              <p class="header__top_info">
+                <span>Пн-Пт:</span> с 9 00 до 18 00 <br><span>Сб-Вс:</span> с 9 00 до 14 00</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 text-center text-lg-left d-lg-flex align-items-center mt-5 mt-lg-0"><i class="fas fa-phone"></i>
+            <div>
+              <div class="header__top_info"><a class="header__top_info_tel" href="tel:375336736999">+375 33 673-69-99</a>
+                <div class="d-lg-flex"><a class="header__top_info_tel--min" href="tel:375296836999">+375 29 683-69-99</a><a class="header__top_info_tel--min ml-lg-5" href="tel:8(0163)410120">8(0163) 41-01-20</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <nav class="menu__nav">
+              <ul class="menu__list d-flex justify-content-between">
+                <li class="menu__list_item"><a class="menu__list_item_link" href="#advs">Преимущества</a></li>
+                <li class="menu__list_item"><a class="menu__list_item_link" href="#sales">Типы металлочерепицы</a></li>
+                <li class="menu__list_item"><a class="menu__list_item_link" href="#type">Типы покрытия</a></li>
+                <li class="menu__list_item"><a class="menu__list_item_link" href="#color">Популярные цвета</a></li>
+                <li class="menu__list_item"><a class="menu__list_item_link" href="#gallery">Фотогалерея</a></li>
+                <li class="menu__list_item"><a class="menu__list_item_link" href="#calculate-form">Калькулятор</a></li>
+                <li class="menu__list_item"><a class="menu__list_item_link" href="#footer">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="offer position-relative" id="offer">
+      <div class="container"> 
+        <div class="row mt-5 align-items-center">
+          <div class="col-12 col-lg-6 text-center text-lg-left offer__info">
+            <h1 class="offer__title">Большой выбор кровельных материалов</h1>
+            <p class="offer__subtitle">по низким ценам в Барановичах</p>
+            <p class="offer__price">Металлочерепица по оптовым ценам <br> всего от 9.3 руб. за м2 с доставкой по Беларуси</p>
+          </div>
+          <div class="col offer__man"><img src="img/header_manager.png" alt="man"></div>
+          <div class="col-12 col-lg-4 text-center text-lg-left ml-auto">
+            <form class="offer__form" action="#">
+              <div class="row">
+                <div class="col-12 text-center"> 
+                  <p class="offer__form_title">Получить точный и быстрый <br> расчет стоимости вашей кровли</p>
+                  <p class="offer__form_text">Заполните форму и наш менеджер сделает для вас <br> точный и быстрый расчет </p>
+                </div>
+                <div class="col-12 text-center text-lg-left">
+                  <label class="offer__form_label" for="square">Площадь кровли: </label>
+                  <input type="text" name="square" id="square" placeholder="Например: 180 м кв">
+                  <label class="offer__form_label mt-3" for="square">Тип металлочерепицы: </label>
+                  <div class="select">
+                    <select name="select_type" id="select_type">
+                      <option value="1" name="supermontarey">Супермонтеррей</option>
+                      <option value="2" name="tramontana">Трамонтана</option>
+                      <option value="3" name="monterossa">Монтеросса</option>
+                    </select>
+                  </div>
+                  <label class="offer__form_label mt-3" for="square">Тип покрытия: </label>
+                  <div class="select">
+                    <select name="select_class" id="select_class">
+                      <option value="1" data-price="16,5">Премиум</option>
+                      <option value="2" data-price="12,74">Премьер</option>
+                      <option value="3" data-price="11,32">Стандарт-Эконом</option>
+                    </select>
+                  </div>
+                  <div class="radio">
+                    <p class="radio__title"><b> Считаем в комплекте с доборными элементами? </b></p>
+                    <div class="d-flex align-items-center">
+                      <input type="radio" name="radio-type" id="radio-1">
+                      <label class="radio__label" for="radio-1">Да</label>
+                      <input type="radio" name="radio-type" id="radio-2">
+                      <label class="radio__label" for="radio-2">Нет</label>
+                    </div>
+                  </div>
+                  <label class="offer__form_label mt-3" for="phone">Ваш телефон: </label>
+                  <input type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __">
+                  <button class="btn" type="submit">Получить расчет</button>
+                </div>
+              </div>
+            </form>
+            <div class="border-form"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advs" id="advs">
+      <div class="container">
+        <div class="row mt-5"> 
+          <h2 class="advs__title">Наши преимущества</h2>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left text-md-left d-lg-flex align-items-center advs__item animated wow bounceInLeft delay-0 8s"><img src="img/calculator.png">
+            <p class="advs__text">Бесплатный замер, расчет <br>  и  доставка  вашей крыши</p>
+          </div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left text-md-left d-lg-flex align-items-center advs__item animated wow bounceInLeft delay-0 8s"><img src="img/pantone.png">
+            <p class="advs__text">Широкий ассортимент, возможность<br>  заказа редких позиций </p>
+          </div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left text-md-left d-lg-flex align-items-center advs__item animated wow bounceInRight delay-0 8s"><img src="img/support.png">
+            <p class="advs__text">Бесплатная консультация <br> и практические советы</p>
+          </div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left text-md-left d-lg-flex align-items-center advs__item animated wow bounceInRight delay-0 8s"><img src="img/placeholder.png">
+            <p class="advs__text">Удобное расположение <br> в центре города</p>
+          </div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left text-md-left d-lg-flex align-items-center advs__item animated wow bounceInLeft delay-0 8s"><img src="img/gift.png">
+            <p class="advs__text">При покупке комплекта <br> кровли приятный подарок</p>
+          </div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left text-md-left d-lg-flex align-items-center advs__item animated wow bounceInLeft delay-0 8s"><img src="img/thumb-up.png">
+            <p class="advs__text">Высокое качество товара. <br> Работаем только с проверенными производителями</p>
+          </div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left text-md-left d-lg-flex align-items-center advs__item animated wow bounceInRight delay-0 8s"><img src="img/security.png">
+            <p class="advs__text">Более 15 лет <br> на рынке</p>
+          </div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left text-md-left d-lg-flex align-items-center advs__item animated wow bounceInRight delay-0 8s"><img src="img/calendar.png">
+            <p class="advs__text">Мы работаем без выходных</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="consultation animated wow bounceInLeft delay-1s" id="consultation">
+      <div class="container">
+        <div class="row consultation__list mt-5 align-items-center">
+          <div class="col-lg-6 consultation__list_item position-relative">
+            <div class="square"><img src="img/pp_man.png"></div>
+          </div>
+          <div class="col-12 col-lg-6 text-lg-left consultation__list_item text-center">
+            <form class="consultation__form" action="#">
+              <p class="consultation__title">Не знаете с чего начать?</p>
+              <p class="consultation__subtitle">Оставьте заявку и наш менеджер проконсультирует вас.</p>
+              <label class="offer__form_label mt-3" for="phone">Ваш телефон: </label>
+              <input type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __">
+              <button class="btn" type="submit">Заказать консультацию</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sales" id="sales">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-lg-left">
+            <h2>Тип металлочерепицы</h2>
+          </div>
+        </div>
+        <div class="row sales__list mt-5">
+          <div class="col-12 col-lg-4 text-center text-lg-left">
+            <div class="sales__list_item"><img class="img-fluid" src="img/sale-product1.jpg">
+              <p class="sales__list_item_title">Супермонтеррей</p>
+              <p class="sales__list_item_text">
+                <span> Описание: </span> <br>Классический S-образный профиль металлочерепицы, завоевавший популярность широкого круга потребителей. Умеренная высота ступеньки Монтеррей (21 мм) хорошо подчеркивает его фактуру. Выпускается в популярных полимерных покрытиях.</p>
+              <p class="sales__list_item_text"><span> Характеристики: </span></p>
+              <ul>
+                <li>Ширина полная/полезная  1190/1100 мм</li>
+                <li>Высота ступени 21 мм</li>
+                <li>Длина ступеньки 350 мм</li>
+                <li>Максимальная длина 6 м   </li>
+              </ul>
+              <p class="sales__list_item_text sales__list_item_price">
+                <span> Цена: </span> <br>от  <span class="price">9,30</span>byn за кв.м.</p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Заказать</button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 text-center text-lg-left">
+            <div class="sales__list_item"><img class="img-fluid" src="img/sale-product2.jpg">
+              <p class="sales__list_item_title">Трамонтана</p>
+              <p class="sales__list_item_text">
+                <span> Описание: </span> <br>Усиленная геометрия профиля металлочерепицы Трамонтана делает ее устойчивой к порывистым ветровым нагрузкам. Это свойство позволяет металлочерепице Трамонтана быть наилучшим решением для частного строительства в любых географических широтах.</p>
+              <p class="sales__list_item_text"><span> Характеристики: </span></p>
+              <ul>
+                <li>Ширина полная/полезная 1195/1150 мм</li>
+                <li>Высота ступени 25/30/35 мм</li>
+                <li>Длина ступеньки 350/400 мм</li>
+                <li>Максимальная длина 6 м  </li>
+              </ul>
+              <p class="sales__list_item_text sales__list_item_price">
+                <span> Цена: </span> <br>от  <span class="price">13,81</span>byn за кв.м.</p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Заказать</button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 text-center text-lg-left">
+            <div class="sales__list_item"><img class="img-fluid" src="img/sale-product3.jpg">
+              <p class="sales__list_item_title m-auto">Монтеросса</p>
+              <p class="sales__list_item_text lh">
+                <span> Описание: </span> <br>Благодаря технологии 3D реза горизонтальные стыки листов металлочерепицы Монтерроса практически незаметны. Герметичность вертикального нахлеста гарантирует двойная капиллярная канавка. Продуманная геометрия продольного нахлеста позволяет оптимально использовать материал без лишнего металла в замке, что приводит к экономии финансов.</p>
+              <p class="sales__list_item_text"><span> Характеристики: </span></p>
+              <ul>
+                <li>Ширина полная/полезная  1190/1100 мм</li>
+                <li>Высота ступени 21 мм</li>
+                <li>Длина ступеньки 350 мм</li>
+                <li>Максимальная длина 6 м   </li>
+              </ul>
+              <p class="sales__list_item_text sales__list_item_price">
+                <span> Цена: </span> <br>от  <span class="price">14,42</span>byn за кв.м.</p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="type" id="type">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-left">
+            <h2 class="type__title">Тип покрытия</h2>
+            <p class="type__subtitle">Есть 3 типа покрытия, которые отличаются друг от друга:</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 text-left col-lg-4 mt-3">
+            <div class="type__item premium">
+              <p class="type__item_warranty text-right">Гарантия до 40 лет </p>
+              <div class="d-lg-flex justify-content-between align-items-center">
+                <p class="type__item_title">Премиум</p>
+                <p class="type__item_price">Цена от <span> 16,15 byn </span></p>
+              </div>
+              <p class="type__item_text">В перечень данной линейки покрытий входят материалы наивысшего качества с наилучшими показателями.</p>
+              <p class="type__item_line">
+                <span>Доступные покрытия в линейке:</span>VikingMPE, PURMAN, GraniteCLOUDY, AGNETA, Colorcoat Prisma.</p>
+              <p class="type__item_height">Толщина стали 0,5 мм</p>
+            </div>
+          </div>
+          <div class="col-12 text-left col-lg-4 mt-3">
+            <div class="type__item premier">
+              <p class="type__item_warranty text-right">Гарантия до 30 лет </p>
+              <div class="d-lg-flex justify-content-between align-items-center">
+                <p class="type__item_title">Премьер</p>
+                <p class="type__item_price">Цена от <span> 12,74 byn </span></p>
+              </div>
+              <p class="type__item_text">В перечень данной линейки входят материалы достойного качества, которые хорошо себя зарекомендовали на рынке и отлично подойдут в качестве материалов для кровли.</p>
+              <p class="type__item_line">
+                <span>Доступные покрытия в линейке:</span>NormanMP, PURETAN</p>
+              <p class="type__item_height">Толщина стали 0,5 мм</p>
+            </div>
+          </div>
+          <div class="col-12 text-left col-lg-4 mt-3">
+            <div class="type__item standart">
+              <p class="type__item_warranty text-right">Гарантия до 10 лет </p>
+              <div class="d-lg-flex justify-content-between align-items-center">
+                <p class="type__item_title">Эконом-Стандарт</p>
+                <p class="type__item_price">Цена от <span> 9,30 byn </span></p>
+              </div>
+              <p class="type__item_text">В перечень данной линейки покрытий входят самые бюджетные материалы.</p>
+              <p class="type__item_line">
+                <span>Доступные покрытия в линейке:</span>VikingMP, Полиэстер </p>
+              <p class="type__item_height">Толщина стали 0,4мм и 0,45 мм</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="color" id="color">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-left">
+            <h2 class="color__title">Популярные цвета металлочерепицы</h2>
+          </div>
+        </div>
+        <div class="row responsive mt-3">
+          <div class="col-12 col-lg-2 text-center color__item"><img class="img-fluid" src="img/slide/slide-1.jpg"><span>7024</span></div>
+          <div class="col-12 col-lg-2 text-center color__item"><img class="img-fluid" src="img/slide/slide-2.jpg"><span>5005</span></div>
+          <div class="col-12 col-lg-2 text-center color__item"><img class="img-fluid" src="img/slide/slide-3.jpg"><span>3005</span></div>
+          <div class="col-12 col-lg-2 text-center color__item"><img class="img-fluid" src="img/slide/slide-4.jpg"><span>6005</span></div>
+          <div class="col-12 col-lg-2 text-center color__item"><img class="img-fluid" src="img/slide/slide-5.jpg"><span>8017</span></div>
+          <div class="col-12 col-lg-2 text-center color__item"><img class="img-fluid" src="img/slide/slide-6.jpg"><span>9005</span></div>
+          <div class="col-12 col-lg-2 text-center color__item"><img class="img-fluid" src="img/slide/slide-1.jpg"><span>7024</span></div>
+          <div class="col-12 col-lg-2 text-center color__item"><img class="img-fluid" src="img/slide/slide-2.jpg"><span>5005</span></div>
+          <div class="col-12 col-lg-2 text-center color__item"><img class="img-fluid" src="img/slide/slide-3.jpg"><span>3005</span></div>
+          <div class="col-12 col-lg-2 text-center color__item"><img class="img-fluid" src="img/slide/slide-4.jpg"><span>6005</span></div>
+          <div class="col-12 col-lg-2 text-center color__item"><img class="img-fluid" src="img/slide/slide-5.jpg"><span>8017</span></div>
+          <div class="col-12 col-lg-2 text-center color__item"><img class="img-fluid" src="img/slide/slide-6.jpg"><span>9005</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="consultation payment animated wow bounceInLeft delay-0 8s" id="consultation">
+      <div class="container">
+        <div class="row consultation__list mt-5 align-items-center">
+          <div class="col-lg-6 consultation__list_item position-relative">
+            <div class="square"><img class="img-fluid" src="img/pp_man2.png"></div>
+          </div>
+          <div class="col-12 col-lg-6 text-lg-left consultation__list_item text-center">
+            <form class="consultation__form" action="#">
+              <p class="consultation__title">Получите бесплатный расчет <br> сметы за 24 часа</p>
+              <p class="consultation__subtitle">Оставьте заявку и наш менеджер рассчитает смету в течении <br> 24 часов для Вас.</p>
+              <label class="offer__form_label mt-3" for="phone">Ваш телефон: </label>
+              <input type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __">
+              <button class="btn" type="submit">Заказать консультацию</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="container"> 
+        <div class="row">
+          <div class="col-12 text-left">
+            <h2 class="gallery__title">Фотогалерея</h2>
+          </div>
+        </div>
+        <div class="row mt-5 d-none d-lg-flex d-md-flex">
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left mt-3"><a data-fancybox="gallery_link" href="img/gallery/big/1.jpg">
+              <div class="photobox photobox_type5">
+                <div class="photobox__previewbox"><img class="img-fluid photobox__preview" src="img/gallery/1.jpg"><span class="photobox__label"><i class="fas fa-plus"></i></span></div>
+              </div></a></div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left mt-3"><a data-fancybox="gallery_link" href="img/gallery/big/2.jpg">
+              <div class="photobox photobox_type5">
+                <div class="photobox__previewbox">                              <img class="img-fluid photobox__preview" src="img/gallery/2.jpg"><span class="photobox__label"><i class="fas fa-plus"></i></span></div>
+              </div></a></div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left mt-3"><a data-fancybox="gallery_link" href="img/gallery/big/3.jpg">
+              <div class="photobox photobox_type5">
+                <div class="photobox__previewbox">                              <img class="img-fluid photobox__preview" src="img/gallery/3.jpg"><span class="photobox__label"><i class="fas fa-plus"></i></span></div>
+              </div></a></div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left mt-3"><a data-fancybox="gallery_link" href="img/gallery/big/4.jpg">
+              <div class="photobox photobox_type5">
+                <div class="photobox__previewbox">                              <img class="img-fluid photobox__preview" src="img/gallery/4.jpg"><span class="photobox__label"><i class="fas fa-plus"></i></span></div>
+              </div></a></div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left mt-3"><a data-fancybox="gallery_link" href="img/gallery/big/5.jpg">
+              <div class="photobox photobox_type5">
+                <div class="photobox__previewbox">                              <img class="img-fluid photobox__preview" src="img/gallery/5.jpg"><span class="photobox__label"><i class="fas fa-plus"></i></span></div>
+              </div></a></div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left mt-3"><a data-fancybox="gallery_link" href="img/gallery/big/6.jpg">
+              <div class="photobox photobox_type5">
+                <div class="photobox__previewbox">                              <img class="img-fluid photobox__preview" src="img/gallery/6.jpg"><span class="photobox__label"><i class="fas fa-plus"></i></span></div>
+              </div></a></div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left mt-3"><a data-fancybox="gallery_link" href="img/gallery/big/7.jpg">
+              <div class="photobox photobox_type5">
+                <div class="photobox__previewbox">                              <img class="img-fluid photobox__preview" src="img/gallery/7.jpg"><span class="photobox__label"><i class="fas fa-plus"></i></span></div>
+              </div></a></div>
+          <div class="col-12 col-lg-3 col-md-4 text-center text-lg-left mt-3"><a data-fancybox="gallery_link" href="img/gallery/big/8.jpg">
+              <div class="photobox photobox_type5">
+                <div class="photobox__previewbox">                              <img class="img-fluid photobox__preview" src="img/gallery/8.jpg"><span class="photobox__label"><i class="fas fa-plus"></i></span></div>
+              </div></a></div>
+        </div>
+        <div class="row gallery-mobile d-block d-md-none d-lg-none mt-5">
+          <div class="col-12 m-auto"><img class="img-fluid m-auto" src="img/gallery/1.jpg"></div>
+          <div class="col-12 m-auto"><img class="img-fluid m-auto" src="img/gallery/2.jpg"></div>
+          <div class="col-12 m-auto"><img class="img-fluid m-auto" src="img/gallery/3.jpg"></div>
+          <div class="col-12 m-auto"><img class="img-fluid m-auto" src="img/gallery/4.jpg"></div>
+          <div class="col-12 m-auto"><img class="img-fluid m-auto" src="img/gallery/5.jpg"></div>
+          <div class="col-12 m-auto"><img class="img-fluid m-auto" src="img/gallery/6.jpg"></div>
+          <div class="col-12 m-auto"><img class="img-fluid m-auto" src="img/gallery/7.jpg"></div>
+          <div class="col-12 m-auto"><img class="img-fluid m-auto" src="img/gallery/8.jpg"></div>
+        </div>
+      </div>
+    </section>
+    <section class="discount" id="discount">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-6 d-none d-lg-block"><img class="ml-lg-5" src="img/sales-man.png"></div>
+          <div class="col-12 col-lg-6 text-lg-left text-center">
+            <p class="discount__title">Скидка до <span>18<span>%</span></span> <br> на доборные элементы</p>
+            <p class="discount__text">ЗАКАЗЫВАЯ МЕТАЛЛОЧЕРЕПИЦУ У НАС, ВЫ ПОЛУЧАЕТЕ СКИДКУ ДО 18% НА ВСЕ КОМПЛЕКТУЮЩИЕ <span>ДОБОРНЫЕ ЭЛЕМЕНТЫ</span></p><span class="discount_fix">Оставить заявку</span>
+            <form class="d-lg-flex align-items-start justify-content-between" action="#">
+              <div>
+                <label class="offer__form_label" for="phone">Ваш телефон: </label>
+                <input type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __">
+              </div>
+              <button class="btn" type="submit">Заказать консультацию</button>
+            </form>
+            <p class="discount__callback">ИЛИ ПОЗВОНИТЕ НАМ: <span> +375 33 673-69-99 </span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="installment" id="installment">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12 col-lg-6 text-center">
+            <div class="installment__cart ml-auto"><img class="img-fluid" src="img/magnit-cart.png"></div>
+          </div>
+          <div class="col-12 col-lg-6 text-lg-left text-center">
+            <p class="installment__title">РАССРОЧКА 0% ДО 36 МЕСЯЦЕВ,</p>
+            <p class="installment__subtitle">БЕЗ ПЕРВОНАЧАЛЬНОГО ВЗНОСА </p>
+            <p class="installment__text">КАРТА РАССРОЧКИ МАГНИТ</p>
+          </div>
+        </div>
+        <div class="row calculate" id="calculate-form">
+          <div class="col-12 text-center text-lg-left ml-auto calculate__item">
+            <form class="offer__form calc__form">
+              <div class="row align-items-center">
+                <div class="col-12 text-left"> 
+                  <h2>Получить точный и быстрый <br> расчет стоимости вашей кровли</h2>
+                  <p class="offer__form_text">Заполните форму и наш менеджер сделает для вас точный и быстрый расчет </p>
+                </div>
+                <div class="col-12 col-lg-3 text-center text-lg-left mt-lg-4">
+                  <label class="offer__form_label" for="square">Площадь кровли м2: </label>
+                  <input class="calc__square" type="text" name="square" id="square" placeholder="Например: 180">
+                </div>
+                <div class="col-12 col-lg-3 text-center text-lg-left">
+                  <label class="offer__form_label mt-3" for="square">Тип металлочерепицы: </label>
+                  <div class="select">
+                    <select name="select_type" id="select_type">
+                      <option class="option_type supType" data-premium="16.5" data-premier="12.74" data-standart="11.32">Супермонтеррей</option>
+                      <option class="option_type tramType" data-premium="17.30" data-premier="13.81">Трамонтана</option>
+                      <option class="option_type monType" data-premium="17.85" data-premier="14.42">Монтеросса</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 text-center text-lg-left">
+                  <label class="offer__form_label mt-3" for="square">Тип покрытия: </label>
+                  <div class="select">
+                    <select name="select_class" id="select_class">
+                      <option class="option_class premiumSelect" data-price="16.5">Премиум</option>
+                      <option class="option_class premierSelect" data-price="12,74">Премьер</option>
+                      <option class="option_class standartSelect" data-price="11.32">Стандарт-Эконом</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 text-center text-lg-left">
+                  <div class="radio">
+                    <p class="radio__title"><b> Считаем в комплекте с доборными элементами? </b></p>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                      <input type="radio" name="radio-type" id="radio-1">
+                      <label class="radio__label" for="radio-1">Да</label>
+                      <input type="radio" name="radio-type" id="radio-2">
+                      <label class="radio__label" for="radio-2">Нет</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 text-center text-lg-left mt-4">
+                  <label class="offer__form_label mt-3" for="name">Ваш имя: </label>
+                  <input type="text" name="name" id="name" placeholder="Иван">
+                </div>
+                <div class="col-12 col-lg-3 text-center text-lg-left mt-4">
+                  <label class="offer__form_label mt-3" for="phone">Ваш телефон: </label>
+                  <input type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __">
+                </div>
+                <div class="col-12 col-lg-3 text-center text-lg-left mt-4">
+                  <label class="offer__form_label mt-3" for="email">Ваш E-mail: </label>
+                  <input type="email" name="email" id="email" placeholder="Mail@mail.ru">
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-12 text-center text-lg-left d-lg-flex align-items-center justify-content-between">
+                  <p class="calculate__title">Стоимость вашей кровлии:<span class="calculate__price calc__display"> </span></p>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#thanksModal">Получить расчет</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer" id="footer"> 
+      <div class="container-fluid">
+        <div class="row footer__contacts align-items-end">
+          <div class="col-12 col-lg-4 text-center text-lg-left">
+            <div class="contacts">
+              <p class="footer__contacts_title">Контакты</p>
+              <p class="footer__contacts_address">
+                <span> Адрес: </span> <br>г.Барановичи, ул. Брестская д.86</p>
+              <p class="footer__contacts_address">
+                <span> Время работы: </span> <br>Пн-Пт: с 9:00 до 18:00 <br>
+                Сб-Вс: с 9:00 до 14:00 <br>
+              </p>
+              <p class="footer__contacts_address">
+                <span> Телефоны: </span> <br>+375 33 673-6-999 <br>
+                +375 29 683-69-99 <br>
+                8(0163)41-01-20 <br>
+              </p>
+              <ul class="d-flex mt-4 justify-content-center justify-content-lg-start">
+                <li><a class="vk" href="#"> </a></li>
+                <li><a class="fb" href="#"></a></li>
+                <li><a class="inst" href="#"></a></li>
+              </ul>
+              <p class="politics">Не является публичной офертой</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8 footer__map d-lg-block d-none position-relative">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd432400b6d89adffcd3b451cdd21a775e804ad8228066d532ea5565a7fd7f4e&amp;amp;source=constructor" width="100%" height="720" frameborder="0"></iframe><img src="img/place.png">
+          </div>
+          <div class="col-12 col-lg-8 footer__map d-lg-none d-block container-fluid">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aff94eda03eb7cc7ffea147719b5bf4489cca61343d67042eb6a363d5ca12227d&amp;amp;source=constructor" width="100%" height="302" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="offer__form_title">Заказать <br> супермонтеррей</p>
+            <p class="offer__form_text">Заполните форму и наш менеджер свяжется с вами <br> в ближайшее врямя</p>
+            <button class="popup-close close" type="button" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button><span aria-hidden="true">
+               &times;</span>
+          </div>
+          <div class="modal-body">
+            <form class="offer__form" action="#">
+              <label class="offer__form_label mt-3" for="name">Ваш имя: </label>
+              <input type="text" name="name" id="name" placeholder="Иван">
+              <label class="offer__form_label mt-3" for="phone">Ваш телефон: </label>
+              <input type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __">
+              <button class="btn" type="submit">Получить расчет</button>
+            </form>
+          </div>
+          <div class="border-form"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="offer__form_title">ТРАМОНТАНА</p>
+            <p class="offer__form_text">Заполните форму и наш менеджер свяжется с вами <br> в ближайшее врямя</p>
+            <button class="popup-close close" type="button" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button><span aria-hidden="true">
+               &times;</span>
+          </div>
+          <div class="modal-body">
+            <form class="offer__form" action="#">
+              <label class="offer__form_label mt-3" for="name">Ваш имя: </label>
+              <input type="text" name="name" id="name" placeholder="Иван">
+              <label class="offer__form_label mt-3" for="phone">Ваш телефон: </label>
+              <input type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __">
+              <button class="btn" type="submit">Получить расчет</button>
+            </form>
+          </div>
+          <div class="border-form"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="offer__form_title">МОНТЕРОССА</p>
+            <p class="offer__form_text">Заполните форму и наш менеджер свяжется с вами <br> в ближайшее врямя</p>
+            <button class="popup-close close" type="button" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button><span aria-hidden="true">
+               &times;</span>
+          </div>
+          <div class="modal-body">
+            <form class="offer__form" action="#">
+              <label class="offer__form_label mt-3" for="name">Ваш имя: </label>
+              <input type="text" name="name" id="name" placeholder="Иван">
+              <label class="offer__form_label mt-3" for="phone">Ваш телефон: </label>
+              <input type="tel" name="tel" id="tel" placeholder="+ 375 (__) ___ - __ - __">
+              <button class="btn" type="submit">Получить расчет</button>
+            </form>
+          </div>
+          <div class="border-form"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="offer__form_title">расчет вашей кровли <br> отправлен на почту </p>
+            <p class="offer__form_text">Наш менеджер свяжется с вами <br> в ближайшее врямя для уточнения деталей.</p>
+            <button class="popup-close close" type="button" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button><span aria-hidden="true">
+               &times;</span>
+          </div>
+          <div class="border-form"></div>
+        </div>
+      </div>
+    </div>
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/headhesive.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/scroll-menu.js"></script>
+    <script src="js/calculate.js"></script>
+  </body>
+</html>

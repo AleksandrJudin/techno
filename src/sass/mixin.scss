@@ -1,0 +1,17 @@
+@mixin font($fz, $fw, $clr) {
+  font-size: $fz;
+  font-weight: $fw;
+  color: $clr;
+}
+
+@mixin bg-img ($bgi, $bgr, $bgp) {
+  background-image: $bgi;
+  background-repeat: $bgr;
+  background-position: $bgp;
+}
+
+%afbe {
+  content: '';
+  position: absolute;
+  display: block;
+}
